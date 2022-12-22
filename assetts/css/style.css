@@ -1,23 +1,16 @@
-ul {
-    list-style: none;
+html, body, .container-fluid, .content-row {
+    height: 100%;
 }
-li {
-    border-bottom: 1px solid lightgray;
-    text-align: left;
-    padding-left: 10px;
+
+.hide {
+    display: none;
 }
-.card-title {
-    font-size: 20px;
+
+.city-btn:hover {
+    background-color: #f6f5f5;
+    cursor: pointer;
 }
-img {
-    width: 100px;
-    height: 100px;
-}
-.fiveDayColor {
-    padding: 20px;
-    background-color: #1E90FF;
-    color: white;
-    float: left;
-    margin: 10px;
-    border: 1px solid lightgray;
+
+.card {
+    background-color: #cce5ff;
 }

@@ -1,53 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Weather Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WeatherOrNot</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assetts/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
 </head>
 <body>
     <div class="container-fluid">
-        <div class="card">
-            <div class="card-body text-center bg-dark text-white">
-                <h1>Weather Dashboard</h1>
+        <div class="row navbar navbar-dark bg-dark">
+            <div class="col-12 text-center">
+                <h1 class="navbar-brand pb-0 px-0">Here's The Weather</h1>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="card-body text-center">
-                        <div class="card" style="width: 18rem;">
-                            <div class="card-body bg-light">
-                                <h6 class="card-subtitle mb-2 text-muted">Search For A City</h6>
-                                <div class="input-group mb-3">
-                                    <input type="text" class="form-control searchInput" placeholder="Enter City Name"
-                                        aria-label="Recipient's username" aria-describedby="button-addon2">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary bg-primary searchButton" type="button"
-                                            id="button-addon2"><i class="fas fa-search"></i></button>
-                                    </div>
-                                </div>
-                                <ul class="list-group">
-                                </ul>
-                            </div>
+        <div class="row content-row">
+            <div class="col-12 col-md-3 bg-light pt-3">
+                <h5>Search city:</h5>
+                <form>
+                    <div class="form-group input-group">
+                        <input type="text" class="form-control" id="search-city" placeholder="Enter city here">
+                        <div class="input-group-append">
+                            <button class="btn btn-info" type="button" id="search-city-button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="card">
+                    <ul class="list-group list-group-flush" id="search-history-list">
+                    </ul>
+                    <button id="clear-history" class="btn btn-sm btn-secondary hide">Clear History</button>
+                </div>
+            </div>
+            <div id="weather-content" class="col-12 col-md-9 hide">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="city-info border rounded my-3 px-3 py-3">
+                            <h2 id="current-city">City Information <small class="text-muted" id="current-date"></small></h2>
+
+                            <p class="mb-0">Temperature: <span id="current-temp"></span></p>
+                            <p class="mb-0">Humidity: <span id="current-humidity"></span></p>
+                            <p class="mb-0">Wind Speed: <span id="current-wind-speed"></span></p>
+                            <p>UV index: <span id="uv-index"></span></p>
                         </div>
                     </div>
                 </div>
-                <div class="col mt-4 mr-5">
-                    <div class="card currentCard pb-2 pt-1">
-                        <h5 class="card-title mt-2 text-center">Current Forecast</h5>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>5-Day Forecast</h3>
+                        
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col mt-4">
-                        <div class="card pb-5 fiveDayCard pl-5">
-                            <h5 class="card-title mt-2 mr-5">5-Day Forecast </h5>
-                            <div class="row">
-                                <div class="col fiveDayOne">
-                                </div>
+                <div id="five-day-forecast" class="row">
+                    <div class="col-2">
+                        <div class="card">
+                            <div class="card-body">
+                            <h5 class="card-title">Date</h5>
+                            <i class="fa fa-sun"></i>
+                            <p class="card-text">Temp: </p>
+                            <p class="card-text">Humidity: </p>
                             </div>
                         </div>
                     </div>
@@ -56,9 +72,6 @@
         </div>
     </div>
     <script src="./assetts/js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 </body>
-</html>
 </html>
 <!--0ea79160236e2125c57f8f5dcb0d77f9  this is the api key-->>
