@@ -1,3 +1,4 @@
+//Varieables
 var searchHistoryList = $('#search-history-list');
 var searchCityInput = $("#search-city");
 var searchCityButton = $("#search-city-button");
@@ -11,8 +12,10 @@ var weatherContent = $("#weather-content");
 var APIkey = "0ea79160236e2125c57f8f5dcb0d77f9";
 var cityList = [];
 var currentDate = moment().format('L');
+//gets date and sets up history from local
 $("#current-date").text("(" + currentDate + ")");
 initalizeHistory();
+//sets up functions
 showClear();
 $(document).on("submit", function(){
     event.preventDefault();
@@ -100,6 +103,7 @@ function currentConditionsRequest(searchValue) {
         });
     });
 };
+//search history 
 function searchHistory(searchValue) {
     if (searchValue) {
         if (cityList.indexOf(searchValue) === -1) {

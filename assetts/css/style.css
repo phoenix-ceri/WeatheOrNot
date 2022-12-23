@@ -1,7 +1,11 @@
 html, body, .container-fluid, .content-row {
     height: 100%;
 }
+body{
+background-image: url(../photo/cork.jpg);
 
+
+}
 .hide {
     display: none;
 }
@@ -13,4 +17,15 @@ html, body, .container-fluid, .content-row {
 
 .card {
     background-color: #cce5ff;
+}
+.fonts{
+    font-weight: bold;
+    font-size: 20px;
+}
+.text-muted{
+    color: darkslategrey;
+
+}
+.bold{
+    font-weight: bolder;
 }
