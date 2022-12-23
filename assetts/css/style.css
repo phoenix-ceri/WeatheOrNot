@@ -1,8 +1,11 @@
-html, body, .container-fluid, .content-row {
+html,
+body,
+.container-fluid,
+.content-row {
     height: 100%;
 }
-body{
-background-image: url(../photo/cork.jpg);
+body {
+    background-image: url('../photo/cork.jpg');
 
 
 }
@@ -18,14 +21,14 @@ background-image: url(../photo/cork.jpg);
 .card {
     background-color: #cce5ff;
 }
-.fonts{
+.fonts {
     font-weight: bold;
     font-size: 20px;
 }
-.text-muted{
+.text-muted {
     color: darkslategrey;
 
 }
-.bold{
+.bold {
     font-weight: bolder;
 }
