@@ -1,19 +1,29 @@
 # WeatherOrNot
+
 ## Description
+
 Want To know the Weather where you are? Just type your city name into the search and you will get the next five days of weather!
+
 ## Installation
+
 No instalation required just run from the link
 
 ![screenshot](./assetts/photo/screen.png)
 https://weathernot.netlify.app
+
 ## Usage
-imput the city 
+
+imput the city
 click search
 see the forcast!
+
 ## Credits
-Stackoverflow for help 
+
+Stackoverflow for help
 OpenWeatherApi
+
 ## License
+
 MIT License
 
 Copyright (c) 2022 phoenix-ceri
