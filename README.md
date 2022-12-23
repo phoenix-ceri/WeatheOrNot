@@ -5,7 +5,7 @@ Want To know the Weather where you are? Just type your city name into the search
 No instalation required just run from the link
 
 ![screenshot](./assetts/photo/screen.png)
-[inset link]
+https://weathernot.netlify.app
 ## Usage
 imput the city 
 click search
